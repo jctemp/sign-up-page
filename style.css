@@ -118,6 +118,7 @@ h2 {
 p {
     font-size: var(--text);
     color: var(--color-dark-gray);
+    margin-bottom: 1rem;
 }
 
 img {
