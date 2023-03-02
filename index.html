@@ -51,15 +51,15 @@
                     </div>
                     <div class="item">
                         <label for="phone_number">phone number</label>
-                        <input type="tel" name="phone_number" id="phone_number" placeholder="+49123456789">
+                        <input type="tel" name="phone_number" id="phone_number" placeholder="+49123456789" pattern="\+[0-9][0-9][0-9]+">
                     </div>
                     <div class="item">
                         <label for="password">password</label>
-                        <input type="password" name="password" id="password" placeholder="12+ letter password">
+                        <input type="password" name="password" id="password" placeholder="12+ letter password" minlength="12" pattern="[a-zA-Z0-9]+">
                     </div>
                     <div class="item">
                         <label for="confirm_password">confirm password</label>
-                        <input type="password" name="confirm_password" id="confirm_password">
+                        <input type="password" name="confirm_password" id="confirm_password" minlength="12" pattern="[a-zA-Z0-9]+">
                     </div>
                 </div>
             </section>
