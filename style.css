@@ -74,16 +74,13 @@ section:nth-child(2n + 1) {
 }
 
 form {
-    height: 100%;
-
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     body {
-        grid-template-columns: 1fr;
-        grid-template-rows: 100% 1fr 1fr;
+        display: block;
     }
 
     main {
@@ -96,8 +93,14 @@ form {
     }
 
     section {
+        height: max-content;
         justify-content: center;
     }
+
+    form {
+        display: block;
+    }
+    
 }
 
 /* ====================================================================================== */
@@ -230,7 +233,7 @@ footer a {
     gap: 1rem 3rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
     .top,
     .mid,
