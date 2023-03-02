@@ -16,58 +16,56 @@
             <img src="./design/ub-limited.png">
             <h1>Undefined <br> Behaviour</h1>
         </div>
-        <div class="separator">
-            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
-                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="m16.843 10.211c.108-.141.157-.3.157-.456 0-.389-.306-.755-.749-.755h-8.501c-.445 0-.75.367-.75.755 0 .157.05.316.159.457 1.203 1.554 3.252 4.199 4.258 5.498.142.184.36.29.592.29.23 0 .449-.107.591-.291 1.002-1.299 3.044-3.945 4.243-5.498z" />
-            </svg>
-        </div>
     </header>
 
     <main>
         <!-- <form action="" method="post"> -->
         <form>
-            <section>
-                <div class="container">
+            <section class="top">
+                <div class="wrapper">
                     <h2>Sign up <em>now</em>!</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iure reiciendis voluptate.
                         Reiciendis quasi excepturi accusantium maxime quas assumenda? Ratione, distinctio doloremque.
                     </p>
+                    <p>
+                        A illo dolorum facere veritatis exercitationem reiciendis deleniti <em>doloremque</em> dolorem rerum ea,
+                        nostrum minus voluptate iusto aut animi tenetur, assumenda cupiditate. Repellat?
+                    </p>
                 </div>
             </section>
 
-            <section>
-                <div class="container form-input">
-                    <div class="form-input-wrapper">
+            <section class="mid">
+                <div class="wrapper">
+                    <div class="item">
                         <label for="first_name">first name</label>
                         <input type="text" name="first_name" id="first_name" placeholder="Max">
                     </div>
-                    <div class="form-input-wrapper">
+
+                    <div class="item">
                         <label for="last_name">last name</label>
                         <input type="text" name="last_name" id="last_name" placeholder="Mustermann">
                     </div>
-                    <div class="form-input-wrapper">
+                    <div class="item">
                         <label for="email">email</label>
-                        <input type="text" name="email" id="email" placeholder="max-mustermann@gmx.de">
+                        <input type="email" name="email" id="email" placeholder="max-mustermann@gmx.de">
                     </div>
-                    <div class="form-input-wrapper">
+                    <div class="item">
                         <label for="phone_number">phone number</label>
-                        <input type="text" name="phone_number" id="phone_number" placeholder="+49123456789">
+                        <input type="tel" name="phone_number" id="phone_number" placeholder="+49123456789">
                     </div>
-                    <div class="form-input-wrapper">
+                    <div class="item">
                         <label for="password">password</label>
-                        <input type="text" name="password" id="password" placeholder="12+ letter password">
+                        <input type="password" name="password" id="password" placeholder="12+ letter password">
                     </div>
-                    <div class="form-input-wrapper">
+                    <div class="item">
                         <label for="confirm_password">confirm password</label>
-                        <input type="text" name="confirm_password" id="confirm_password">
+                        <input type="password" name="confirm_password" id="confirm_password">
                     </div>
                 </div>
             </section>
 
-            <section>
-                <div class="container">
+            <section class="bottom">
+                <div class="wrapper">
                     <button class="form-input-wrapper" type="submit">Create Account</button>
                     <p>Already have an account? <a href="">Log in</a></p>
                 </div>
@@ -76,8 +74,8 @@
 
     </main>
 
-    <footer>
-        <div class="container">
+    <footer class="center">
+        <div>
             View this project on <a href="https://github.com/jctemp/sign-up-page">GitHub</a>.
         </div>
     </footer>
