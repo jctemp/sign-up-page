@@ -2,4 +2,80 @@
 
 * {
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    --color-off-white: #f7f7f7;
+    --color-light-gray: #ebebeb;
+    --color-gray: #5b5b5b;
+    --color-dark-gray: #333333;
+    --color-purple: #6a5db0;
+    --color-green: #5db08f;
+
+    --title: 2rem;
+    --section: 1.5rem;
+    --subsection: 1.375rem;
+    --text: 1.25rem;
+    --caption: 1.0rem;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* HEADER SECTION */
+
+header {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 8fr 1fr;
+    background-color: var(--color-light-gray);
+}
+
+.banner {
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: var(--title);
+    color: var(--color-dark-gray);
+}
+
+img {
+    width: min(70%, calc(10 * var(--title)));
+}
+
+svg {
+    height: 80%;
+    fill: var(--color-green);
+}
+
+p {
+    font-size: var(--subsection);
+    color: var(--color-green);
+}
+
+.separator {
+    align-self: end;
+
+    height: 3rem;
+    background-color: var(--color-dark-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORM SECTION */
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
 }
