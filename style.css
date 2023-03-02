@@ -22,7 +22,7 @@
     --section: 1.75rem;
     --subsection: 1.5rem;
     --text: 1rem;
-    --subtext: .5rem;
+    --subtext: .75rem;
 
     /* default 16 * 50 = 800 */
     --max-width: 50rem;
@@ -137,12 +137,19 @@ label {
 }
 
 input {
+    display: block;
     padding: calc(.25 * var(--text)) calc(.5 * var(--text));
     min-width: 30ch;
 
     font-size: var(--text);
     border: 1px solid var(--input-default);
     border-radius: 2px;
+}
+
+.item:has(input:required:invalid)::after {
+    font-size: var(--subtext);
+    content: " * required";
+    color: var(--input-error);
 }
 
 input:active,
@@ -167,6 +174,12 @@ button {
     font-size: var(--text);
     border-style: none;
     border-radius: 2px;
+}
+
+button:disabled,
+button:hover:disabled,
+button:active:disabled {
+    filter: saturate(.1);
 }
 
 a {

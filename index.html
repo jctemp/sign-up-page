@@ -28,7 +28,8 @@
                         Reiciendis quasi excepturi accusantium maxime quas assumenda? Ratione, distinctio doloremque.
                     </p>
                     <p>
-                        A illo dolorum facere veritatis exercitationem reiciendis deleniti <em>doloremque</em> dolorem rerum ea,
+                        A illo dolorum facere veritatis exercitationem reiciendis deleniti <em>doloremque</em> dolorem
+                        rerum ea,
                         nostrum minus voluptate iusto aut animi tenetur, assumenda cupiditate. Repellat?
                     </p>
                 </div>
@@ -36,30 +37,36 @@
 
             <section class="mid">
                 <div class="wrapper">
+                    <!-- <legend>Let's start!</legend> -->
                     <div class="item">
                         <label for="first_name">first name</label>
-                        <input type="text" name="first_name" id="first_name" placeholder="Max">
+                        <input type="text" name="first_name" id="first_name" placeholder="Max" required>
                     </div>
 
                     <div class="item">
                         <label for="last_name">last name</label>
-                        <input type="text" name="last_name" id="last_name" placeholder="Mustermann">
+                        <input type="text" name="last_name" id="last_name" placeholder="Mustermann" required>
                     </div>
                     <div class="item">
                         <label for="email">email</label>
-                        <input type="email" name="email" id="email" placeholder="max-mustermann@gmx.de">
+                        <input type="email" name="email" id="email" placeholder="max-mustermann@gmx.de" required>
                     </div>
                     <div class="item">
                         <label for="phone_number">phone number</label>
-                        <input type="tel" name="phone_number" id="phone_number" placeholder="+49123456789" pattern="\+[0-9][0-9][0-9]+">
+                        <input type="tel" name="phone_number" id="phone_number" placeholder="+49123456789"
+                            pattern="\+[0-9][0-9][0-9]+">
                     </div>
                     <div class="item">
                         <label for="password">password</label>
-                        <input type="password" name="password" id="password" placeholder="12+ letter password" minlength="12" pattern="[a-zA-Z0-9]+">
+                        <input type="password" name="password" id="password" placeholder="12+ letter password"
+                            minlength="12" pattern="[a-zA-Z0-9]+" required>
+                        <span id="message_password"></span>
                     </div>
                     <div class="item">
                         <label for="confirm_password">confirm password</label>
-                        <input type="password" name="confirm_password" id="confirm_password" minlength="12" pattern="[a-zA-Z0-9]+">
+                        <input type="password" name="confirm_password" id="confirm_password" minlength="12"
+                            pattern="[a-zA-Z0-9]+" required>
+                        <span id="message_confirm_password"></span>
                     </div>
                 </div>
             </section>
